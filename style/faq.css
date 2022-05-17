@@ -1,0 +1,56 @@
+.faq {
+    padding: 105px 0 110px;
+    background: #E5E5E5;
+}
+
+.block__faq {
+    width: 100%;
+    height: 100%;
+
+}
+
+.faq__head {
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #222222;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.faq__head_title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 13px;
+}
+
+.faq__head_descr {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.faq__questions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.questions__card {
+    height: auto;
+    max-width: 576px;
+    font-family: 'Poppins';
+    font-style: normal;
+    color: #222222;
+    font-weight: 400;
+    margin-right: 16px;
+    margin-bottom: 50px;
+}
+
+.questions__card_title {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.questions__card_descr {
+    font-size: 16px;
+    line-height: 24px;
+}

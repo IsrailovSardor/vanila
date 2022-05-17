@@ -1,15 +1,21 @@
 .navbar {
-    position: static;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    height: 90px;
+    z-index: 100;
+    padding: 25px;
 }
 
-.navbar__logo {
-    padding: 25px 25px 25px 32px;
+.block_navbar {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo__img {
+.navbar__img {
     height: 40px;
     width: 120px;
 }
@@ -18,27 +24,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Poppins';
+    font-weight: 400;
     padding: 13px 5px 13px 18px;
     width: 611px;
 }
 
-.navbar__li {
+.ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul__li {
     list-style: none;
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 15px;
     line-height: 24px;
     color: #666666;
-
 }
 
-.navbar_btn {
+.ul__btn {
     height: 40px;
     width: 172px;
     background: #222222;
     border-radius: 4px;
-    font-family: 'Poppins';
-    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 2px;

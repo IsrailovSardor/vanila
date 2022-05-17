@@ -1,0 +1,44 @@
+.download {
+    padding: 100px 0 150px;
+}
+
+.block__download {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.download__title {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 5px;
+}
+
+.download__descr {
+    font-size: 32px;
+    line-height: 36px;
+    color: #222222;
+    margin-bottom: 14px;
+}
+
+.download__text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #666666;
+    margin-bottom: 26px;
+}
+
+.download__link {
+    height: 57px;
+    width: 177px;
+}

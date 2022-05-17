@@ -1,25 +1,26 @@
 .future {
-    height: 637px;
     font-family: 'Poppins';
     font-style: normal;
+    font-weight: 400;
 }
 
-.future__block {
+.block__future {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 89px 100px 0 78px;
     color: #222222;
 }
 
-.img__future {
-    height: 548px;
-    width: 376px;
-}
-
 .future__text {
     height: 354px;
     width: 420px;
+}
+
+.future__img {
+    height: 548px;
+    width: 376px;
 }
 
 .future__text_img {
@@ -28,7 +29,6 @@
 }
 
 .future__text_title {
-    font-weight: 400;
     font-size: 54px;
     line-height: 60px;
     margin-bottom: 17px;
@@ -36,15 +36,13 @@
 }
 
 .future__text_descr {
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
 
 .future__text_btn {
     display: flex;
-    margin-top: 20px;
-    margin-left: 5px;
+    margin: 20px 0 0 5px;
 }
 
 .future__btn {
@@ -52,7 +50,6 @@
     width: 148px;
     background: #222222;
     border-radius: 4px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     text-align: center;

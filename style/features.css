@@ -4,7 +4,7 @@
     color: white;
 }
 
-.features__block {
+.block__features {
     padding: 100px 0;
 }
 
@@ -37,7 +37,6 @@
 .features__cards {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .features__card {
@@ -51,10 +50,6 @@
     position: relative;
     margin-right: 16px;
     margin-bottom: 16px;
-}
-
-.features__card:nth-child(3n + 3) {
-    margin-right: 0px;
 }
 
 .features__card_img {
@@ -108,24 +103,51 @@
     color: #222222;
     margin-top: 11px;
 }
+
+.text-blue {
+    color: #0278ED;
+}
+
 .blue {
     background: #0278ED;
-    color:#0278ED; 
 }
-.orange {
-    background: #FF5437;
+
+.text-orange {
     color: #FF5437;
 }
+
+.orange {
+    background: #FF5437;
+}
+
+.text-limon {
+    color: #FF9209;
+}
+
 .limon {
     background: #FF9209;
-color : #FF9209;
 }
+
+.text-violet {
+    color: #B25DF8;
+}
+
 .violet {
-    background: #B25DF8; color : #B25DF8;
+    background: #B25DF8;
 }
+
+.text-sky {
+    color: #00C6DF;
+}
+
 .sky {
-    background: #00C6DF; color : #00C6DF;
+    background: #00C6DF;
 }
+
+.text-pink {
+    color: #E738CE;
+}
+
 .pink {
-    background: #E738CE; color : #E738CE;
+    background: #E738CE;
 }
