@@ -12,6 +12,7 @@
 @import url(./style/download.css);
 @import url(./style/faq.css);
 @import url(./style/footer.css);
+@import url(./style/modal.css);
 * {
     padding: 0;
     margin: 0;
@@ -21,9 +22,37 @@ body{
     width: 100%;
     margin: auto;
     height: auto;
-
 }
+html {
+    scroll-behavior: smooth;
+  }
 .container {
     max-width: 1200px;
     margin: auto;
+}
+
+
+.text-blue {
+    color: #0278ED;
+}
+
+.text-orange {
+    color: #FF5437;
+}
+
+.text-limon {
+    color: #FF9209;
+}
+
+.btn-blue {
+    color: #0278ED;
+}
+
+.btn-orange {
+    border: 1px solid #FF5437;
+}
+
+.btn-limon {
+   
+    border: 1px solid #FF9209;
 }

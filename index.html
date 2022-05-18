@@ -15,20 +15,22 @@
             <img src="./img/logo.png" alt="" class="navbar__img">
             <ul class="navbar__ul">
                 <li class="ul__li">
-                    Features
+                    <a href="#features" class="ul__li">Features</a>
                 </li>
                 <li class="ul__li">
-                    Pricing
+                    <a href="#price" class="ul__li">Pricing</a>
                 </li>
                 <li class="ul__li">
-                    Testimonials
+                    <a href="#technology" class="ul__li">Pricing</a>
                 </li>
                 <li class="ul__li">
-                    FAQ
+                    <a href="#faq" class="ul__li">FAQ</a>
                 </li>
-                <button class="ul__btn">
-                    Get this app
-                </button>
+                <li class="ul__li">
+                    <button class="ul__btn" class="ul__li">
+                        Get this app
+                    </button>
+                </li>
             </ul>
         </div>
     </section>
@@ -54,14 +56,14 @@
                     available
                     in the App Store right now. Go check it out!</p>
                 <div class="future__text_btn">
-                    <button class="future__btn">BUY NOW</button>
+                    <button class="future__btn" id="open">BUY NOW</button>
                     <button class="future__btn">READ MORE</button>
                 </div>
             </div>
             <img src="./img/future_img.png" alt="" class="future__img">
         </div>
     </section>
-    <section class="features">
+    <section class="features" id="features">
         <div class="container block__features">
             <div class="features__header">
                 <p class="features__header_title">Features</p>
@@ -154,7 +156,7 @@
             </div>
         </div>
     </section>
-    <section class="technology">
+    <section class="technology" id="technology">
         <div class="container block__technology">
             <div class="technology__text">
                 <p class="technology__text_head">TEchnology</p>
@@ -195,16 +197,16 @@
             <div class="dark__footer">
                 <button class="dark__footer_btn">
                     <img src="./img/sun.png" class="dark__footer_img" alt="">
-                    Light Mode
+                    <p class="dark__footer_text">Light Mode</p>
                 </button>
                 <button class="dark__footer_btn">
                     <img src="./img/moon.png" class="dark__footer_img" alt="">
-                    Dark mode
+                    <p class="dark__footer_text"> Dark mode</p>
                 </button>
             </div>
         </div>
     </section>
-    <section class="price">
+    <section class="price" id="price">
         <div class="container block__price">
             <div class="price__head">
                 <p class="price__head_text">Pricing</p>
@@ -292,7 +294,7 @@
             <a href="#" class="download__link"><img src="./img/download.png" alt=""></a>
         </div>
     </section>
-    <section class="faq">
+    <section class="faq" id="faq">
         <div class="container block__faq">
             <div class="faq__head">
                 <p class="faq__head_title">
@@ -330,7 +332,7 @@
         </div>
 
     </section>
-    <section class="footer">
+    <footer>
         <div class="container block__footer">
             <img src="./img/footer_logo.png" alt="">
             <div class="footer__link">
@@ -340,7 +342,48 @@
             </div>
         </div>
 
-    </section>
+    </footer>
+    <div class="modal-container" id="modal-container">
+        <div class="modal">
+            <p class="modal__title">Leave a request for the purchase of goods</p>
+            <input type="text" placeholder="name" class="modal__input_text">
+            <input type="text" placeholder="email" class="modal__input_text">
+            <p class="modal__plan">Your plan?</p>
+            <label id="standert" class="btn__card-modal text-blue btn-blue radio__modal_pricer">
+                <input id="standert" class="modal__radio-btn" type="radio" name="Standart" value="" checked><span
+                    class="modal__span standert">Standart</span><br>
+            </label>
+            <label id="premium" class="btn__card-modal text-orange btn-orange radio__modal_pricer">
+                <input id="premium" class="modal__radio-btn" type="radio" name="Standart" value=""><span
+                    class="modal__span premium">Premium</span><br>
+            </label>
+            <label id="lifetime" class="btn__card-modal text-limon btn-limon radio__modal_pricer">
+                <input id="lifetime" class="modal__radio-btn" type="radio" name="Standart" value=""><span
+                    class="modal__span lifetime">Lifetime</span><br>
+            </label>
+            <p class="modal__how">How did you know about our app?</p>
+            <div class="modal__checkbox">
+                <label id="facebook" class="modal__label facebook">
+                    <input class="modal__checkbox-btn" type="radio" name="Facebook" id="facebook"
+                        value="">Facebook</label>
+                <label id="Instagram" class="modal__label facebook">
+                    <input class="modal__checkbox-btn" type="radio" name="Facebook" id="Instagram"
+                        value="">Instagram</label>
+                <label id="Youtube" class="modal__label facebook">
+                    <input class="modal__checkbox-btn" type="radio" name="Facebook" id="Youtube"
+                        value="">Youtube</label>
+                <label id="Other" class="modal__label facebook">
+                    <input class="modal__checkbox-btn" type="radio" name="Facebook" id="Other" value="">Other</label>
+            </div>
+            <button class="modal__btn" id="time-open" onclick="loading()">send</button>
+            <div class="modal-time" id="modal-time">
+                <img src="./img/time.png" alt="" class="time__img">
+                <span class="time__text">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./scripts.js"></script>
+    <script src="./js/time.js"></script>
 </body>
 
 </html>
