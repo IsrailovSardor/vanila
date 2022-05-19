@@ -1,6 +1,3 @@
-.dark {
-    background-color: #222222;
-}
 
 .block__dark {
     display: flex;
@@ -12,7 +9,6 @@
 
 
 .dark__head {
-    color: white;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -31,7 +27,6 @@
     font-size: 32px;
     line-height: 36px;
     text-align: center;
-    color: #FFFFFF;
     margin-bottom: 15px;
 }
 
@@ -64,25 +59,32 @@
 
 .dark__footer_btn {
     height: 49px;
+    color: white;
     width: 128px;
     border: none;
     background: transparent;
 }
 
-.dark__footer_img {
-    width: 24px;
-    height: 24px;
+#moon__white {
+    fill: #FF9209;
+    margin-bottom: 5px;
+}
+#sun__white{
+    fill: white;
     margin-bottom: 5px;
 }
 
 .dark__footer_text {
-    color: white;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+.dark {
+    background-color: #222222;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
 }

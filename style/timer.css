@@ -29,7 +29,31 @@
     letter-spacing: 1.5px;
 }
 
-.timer__text_data {
+.timet__block_data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.timer__line {
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 150px;
+}
+.timer__data {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.timer__line {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 150px;
+}
+.timer__data_title {
     font-weight: 400;
     font-size: 100px;
     line-height: 150px;
@@ -39,15 +63,8 @@
     text-transform: uppercase;
 }
 
-.timer__dates {
-    display: flex;
-    justify-content: space-between;
-}
-
-.timer__dates_descr {
+.timer__date_descr {
     font-size: 24px;
     line-height: 36px;
-    text-align: center;
     letter-spacing: 1.5px;
-
 }
