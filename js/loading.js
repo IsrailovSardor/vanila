@@ -1,5 +1,12 @@
+// let content = document.getElementById("modal-time")
+// let show = document.getElementById("time-open")
+// let hide = document.getElementById("hideContent")
 
-function loading() {
-    let loadingModal = document.querySelector(".modal-time")
-    loadingModal.classList.add('block');
-}
+// show.addEventListener("click", () => {
+//     content.style.display = "block"
+// })
+
+// hide.addEventListener("click", () => {
+//     content.style.display = "none"
+// })
+    

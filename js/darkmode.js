@@ -8,6 +8,7 @@ white.addEventListener('click', () => {
     document.getElementById("dark").style.color = "black"
     document.getElementById("sun__white").style.fill = "#FF9209"
     document.getElementById("moon__white").style.fill = "#222222"
+    document.getElementById("text-limon").style.color = "red"
 })
 dark.addEventListener('click', () => {
     document.getElementById("block-dark__mode").style.backgroundColor = "#222222"

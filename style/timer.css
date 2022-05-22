@@ -4,25 +4,35 @@
     background-size: cover;
     height: 436px;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #FFFFFF;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     margin-top: 90px;
 }
+
+.block_timer {
+    max-width: 729px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timer__flex {
+    display: flex;
+}
+
 .timer__text_tilte {
     font-size: 50px;
     line-height: 75px;
     text-align: center;
     letter-spacing: 1.1px;
     text-transform: uppercase;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum'on, 'lnum'on;
 }
 
-.timer__text_descr {
+.timer__text_description {
     font-size: 30px;
     line-height: 45px;
     text-align: center;
@@ -33,26 +43,24 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
-.timer__line {
-    font-weight: 400;
-    font-size: 100px;
-    line-height: 150px;
-}
+
 .timer__data {
-    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .timer__line {
+    padding: 0 20px;
     margin-bottom: 30px;
     font-weight: 400;
     font-size: 100px;
     line-height: 150px;
 }
+
 .timer__data_title {
     font-weight: 400;
     font-size: 100px;
@@ -63,8 +71,79 @@
     text-transform: uppercase;
 }
 
-.timer__date_descr {
+.timer__date_description {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 1.5px;
+}
+
+@media (max-width: 830px) {
+    .timer__text_tilte {
+        font-size: 40px;
+    }
+
+    .timer__text_description {
+        font-size: 25px;
+    }
+
+    .timer__line {
+        font-size: 70px;
+    }
+
+    .timer__data_title {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .timer__date_description {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .timer__text_tilte {
+        font-size: 30px;
+    }
+
+    .timer__text_description {
+        font-size: 20px;
+    }
+
+    .timer__line {
+        font-size: 50px;
+    }
+
+    .timer__data_title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .timer__date_description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 456px) {
+    .timer__text_tilte {
+        font-size: 25px;
+    }
+
+    .timer__text_description {
+        font-size: 18px;
+    }
+
+    .timer__line {
+        font-size: 40px;
+        padding: 0 5px;
+    }
+
+    .timer__data_title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .timer__date_description {
+        font-size: 10px;
+    }
 }

@@ -1,5 +1,5 @@
 .faq {
-    padding: 105px 0 110px;
+    padding: 105px 0 110px 10px;
     background: #E5E5E5;
 }
 
@@ -23,7 +23,7 @@
     margin-bottom: 13px;
 }
 
-.faq__head_descr {
+.faq__head_description {
     font-size: 15px;
     line-height: 20px;
 }
@@ -50,7 +50,7 @@
     margin-bottom: 10px;
 }
 
-.questions__card_descr {
+.questions__card_description {
     font-size: 16px;
     line-height: 24px;
 }

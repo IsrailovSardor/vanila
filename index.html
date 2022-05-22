@@ -10,10 +10,28 @@
 </head>
 
 <body>
+    <!-- <header>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu">
+            <nav>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+            </nav>
+        </div>
+    </header> -->
+
+
     <section class="navbar">
         <div class="container block_navbar">
-            <img src="./img/logo.png" alt="" class="navbar__img">
+            <a href="#"> <img src="./img/logo.svg" alt="" class="navbar__img"></a>
             <ul class="navbar__ul">
+                <a href="#"> <img src="./img/logo.svg" alt="" class="navbar__img_mobile"></a>
                 <li class="ul__li">
                     <a href="#features" class="ul__li">Features</a>
                 </li>
@@ -21,7 +39,7 @@
                     <a href="#price" class="ul__li">Pricing</a>
                 </li>
                 <li class="ul__li">
-                    <a href="#technology" class="ul__li">Pricing</a>
+                    <a href="#technology" class="ul__li">Testimonials</a>
                 </li>
                 <li class="ul__li">
                     <a href="#faq" class="ul__li">FAQ</a>
@@ -32,32 +50,48 @@
                     </button>
                 </li>
             </ul>
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </section>
-    <section class="timer">
+    <section class="timer" id="timet-data">
         <div class="container block_timer">
             <p class="timer__text_tilte">big sale on lifetime plan</p>
-            <p class="timer__text_descr">there is very little left</p>
-            <div class="timet__block_data" id="timet-data">
-                <div class="timer__data" id="timer_data">
-                    <span class="timer__data_title" id="time-count__day"> </span>
-                    <span class="timer__date_descr">day</span>
-
+            <p class="timer__text_description">there is very little left</p>
+            <div class="timet__block_data">
+                <div class="timer__data">
+                    <div class="timer__flex">
+                        <span class="timer__data_title" id="span__day"></span>
+                        <span class="timer__data_title" id="time-count__day"></span>
+                    </div>
+                    <span class="timer__date_description">days</span>
                 </div>
                 <div class="timer__line">|</div>
-                <div class="timer__data" id="timer_data">
-                    <span class="timer__data_title" id="time-count__hours">00</span>
-                    <span class="timer__date_descrt">hours</span>
+                <div class="timer__data">
+                    <div class="timer__flex">
+                        <span class="timer__data_title" id="span__hours"></span>
+                        <span class="timer__data_title" id="time-count__hours"></span>
+                    </div>
+                    <span class="timer__date_description">hours</span>
                 </div>
                 <div class="timer__line">|</div>
-                <div class="timer__data" id="timer_data">
-                    <span class="timer__data_title" id="time-count__minutes">00</span>
-                    <span class="timer__date_descr">minutes</span>
+                <div class="timer__data">
+                    <div class="timer__flex">
+                        <span class="timer__data_title" id="span__minutes"></span>
+                        <span class="timer__data_title" id="time-count__minutes"></span>
+                    </div>
+                    <span class="timer__date_description">minutes</span>
                 </div>
                 <div class="timer__line">|</div>
-                <div class="timer__data" id="timer_data">
-                    <span class="timer__data_title" id="time-count__seconds">00</span>
-                    <span class="timer__date_descr">seconds</span>
+                <div class="timer__data">
+                    <div class="timer__flex">
+                        <span class="timer__data_title" id="span__seconds"></span>
+                        <span class="timer__data_title" id="time-count__seconds"></span>
+                    </div>
+                    <span class="timer__date_description">seconds</span>
                 </div>
             </div>
         </div>
@@ -65,13 +99,14 @@
     <section class="future">
         <div class="container block__future">
             <div class="future__text">
-                <img src="./img/logo_future.png" alt="" class="future__text_img">
+                <img src="./img/logo.svg" alt="" class="future__text_img">
                 <p class="future__text_title">The future of digital photos.</p>
-                <p class="future__text_descr">The H(app)y app is the latest & greatest in phone photography. It's
+                <p class="future__text_description">The H(app)y app is the latest & greatest in phone photography. It's
                     available
                     in the App Store right now. Go check it out!</p>
                 <div class="future__text_btn">
-                    <button class="future__btn" id="open">BUY NOW</button>
+
+                    <button class="future__btn" id="open__modal">BUY NOW</button>
                     <button class="future__btn">READ MORE</button>
                 </div>
             </div>
@@ -82,17 +117,18 @@
         <div class="container block__features">
             <div class="features__header">
                 <p class="features__header_title">Features</p>
-                <p class="features__header_descr">The latest & greatest in phone photography.</p>
+                <p class="features__header_description">The latest & greatest in phone photography.</p>
             </div>
             <div class="features__cards">
                 <div class="features__card">
                     <img src="./img/card.png" alt="" class="features__card_img">
                     <div class="features__card_text">
                         <div class="features__block_icon blue">
-                            <img src="./img/calendar.png" alt="" class="features__card_icon">
+                            <img src="./img/calendar.svg" alt="" class="features__card_icon">
                         </div>
                         <p class="text-blue features__card_title">Calendar view</p>
-                        <p class="features__card_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        <p class="features__card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam
                             scelerisque aliquam odio et faucibus.</p>
                     </div>
                 </div>
@@ -100,10 +136,10 @@
                     <img src="./img/card.png" alt="" class="features__card_img">
                     <div class="features__card_text">
                         <div class="features__block_icon orange">
-                            <img src="./img/list.png" alt="" class="features__card_icon">
+                            <img src="./img/list.svg" alt="" class="features__card_icon">
                         </div>
                         <p class="text-orange features__card_title">Lists</p>
-                        <p class="features__card_descr">Dolor sit amet urna turpis. Mauris euismod elit et nisi
+                        <p class="features__card_description">Dolor sit amet urna turpis. Mauris euismod elit et nisi
                             ultrices, ut faucibus orci tincidunt.</p>
                     </div>
                 </div>
@@ -111,10 +147,11 @@
                     <img src="./img/card.png" alt="" class="features__card_img">
                     <div class="features__card_text">
                         <div class="features__block_icon limon">
-                            <img src="./img/Aa.png" alt="" class="features__card_icon">
+                            <img src="./img/aa.svg" alt="" class="features__card_icon">
                         </div>
                         <p class="text-limon features__card_title">Varied type</p>
-                        <p class="features__card_descr">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex,
+                        <p class="features__card_description">Nulla rhoncus feugiat eros quis consectetur. Morbi neque
+                            ex,
                             condimentum dapibus congue.</p>
                     </div>
                 </div>
@@ -122,10 +159,10 @@
                     <img src="./img/card.png" alt="" class="features__card_img">
                     <div class="features__card_text">
                         <div class="features__block_icon pink">
-                            <img src="./img/split.png" alt="" class="features__card_icon">
+                            <img src="./img/split.svg" alt="" class="features__card_icon">
                         </div>
                         <p class="text-pink features__card_title">Split-screen</p>
-                        <p class="features__card_descr">Vestibulum ultrices, orci nec egestas pharetra, ligula est
+                        <p class="features__card_description">Vestibulum ultrices, orci nec egestas pharetra, ligula est
                             semper enim, nec auctor sapien leo nec purus.</p>
                     </div>
                 </div>
@@ -133,10 +170,11 @@
                     <img src="./img/card.png" alt="" class="features__card_img">
                     <div class="features__card_text">
                         <div class="features__block_icon sky">
-                            <img src="./img/up.png " alt="" class="features__card_icon">
+                            <img src="./img/up.svg" alt="" class="features__card_icon">
                         </div>
                         <p class="text-sky features__card_title">Uploads</p>
-                        <p class="features__card_descr">Duis tristique sed lorem a vestibulum. Cras commodo consequat
+                        <p class="features__card_description">Duis tristique sed lorem a vestibulum. Cras commodo
+                            consequat
                             orci, in convallis risus egestas non.</p>
                     </div>
                 </div>
@@ -144,30 +182,29 @@
                     <img src="./img/card.png" alt="" class="features__card_img">
                     <div class="features__card_text">
                         <div class="features__block_icon violet">
-                            <img src="./img/eye.png" alt="" class="features__card_icon">
+                            <img src="./img/eye.svg" alt="" class="features__card_icon">
                         </div>
                         <p class="text-violet features__card_title">Focus mode</p>
-                        <p class="features__card_descr">Lorem sit amet urna turpis. Mauris euismod elit et nisi
+                        <p class="features__card_description">Lorem sit amet urna turpis. Mauris euismod elit et nisi
                             ultrices, ut faucibus orci tincidunt.</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <section class="orangess">
         <div class="container block__oranges">
             <div class="oranges__text">
                 <p class="oranges__text_title">400+</p>
-                <p class="oranges__text_descr">Pictures analyzed</p>
+                <p class="oranges__text_description">Pictures analyzed</p>
             </div>
             <div class="oranges__text">
                 <p class="oranges__text_title">25+</p>
-                <p class="oranges__text_descr">Operations per minute</p>
+                <p class="oranges__text_description">Operations per minute</p>
             </div>
             <div class="oranges__text">
                 <p class="oranges__text_title">95%</p>
-                <p class="oranges__text_descr">Accuracy</p>
+                <p class="oranges__text_description">Accuracy</p>
             </div>
         </div>
     </section>
@@ -176,7 +213,8 @@
             <div class="technology__text">
                 <p class="technology__text_head">TEchnology</p>
                 <p class="technology__text_title">Use H(app)y to give your digital photos some pop.</p>
-                <p class="technology__text_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                <p class="technology__text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse
                     varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
                     nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem
                     imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
@@ -190,7 +228,8 @@
             <div class="speed__text">
                 <p class="speed__text_head">Speed & security</p>
                 <p class="speed__text_title">State-of-the-art processing capabilities.</p>
-                <p class="speed__text_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                <p class="speed__text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    varius
                     enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
                     commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
                     ut sem vitae risus tristique posuere.</p>
@@ -202,7 +241,8 @@
             <div class="dark__head">
                 <p class="dark__head_text">Dark mode</p>
                 <p class="dark__head_title">Also available in <span class="dark__head_span">dark</span>.</p>
-                <p class="dark__head_descr">Don't get blinded when using the H(app)y app at night, just turn off the
+                <p class="dark__head_description">Don't get blinded when using the H(app)y app at night, just turn off
+                    the
                     lights. Lorem ipsum dolor
                     sit amet.</p>
             </div>
@@ -224,7 +264,7 @@
                         <path
                             d="M7.43316 5.34005C7.43316 3.63645 7.83911 2.03985 8.53031 0.599617C8.75522 0.127769 8.56322 -0.121872 8.07225 0.0591861C3.36549 1.81216 0 6.3002 0 11.614C0 18.453 5.54333 24 12.384 24C17.697 24 22.187 20.634 23.9397 15.9319C24.1235 15.4409 23.8711 15.2489 23.3994 15.4738C21.9566 16.1624 20.3603 16.5684 18.657 16.5684C12.4553 16.5656 7.43316 11.5399 7.43316 5.34005Z">
                     </svg>
-                    <p class="dark__footer_text"> Dark mode</p>
+                    <p class="dark__footer_text" id="text__mode"> Dark mode</p>
                 </button>
             </div>
         </div>
@@ -234,7 +274,8 @@
             <div class="price__head">
                 <p class="price__head_text">Pricing</p>
                 <p class="price__head_title">A plan for every need.</p>
-                <p class="price__head_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque
+                <p class="price__head_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    scelerisque
                     aliquam odio et faucibus.</p>
             </div>
             <div class="price__sell">
@@ -245,7 +286,7 @@
                         </p>
                         <p class="sell__card_sell text-blue">$9</p>
                     </div>
-                    <p class="sell__card_descr">monthly</p>
+                    <p class="sell__card_description">monthly</p>
                     <button class="sell__card_btn blue">buy now</button>
                 </div>
                 <div class="sell__card">
@@ -255,7 +296,7 @@
                         </p>
                         <p class="sell__card_sell text-orange">$99</p>
                     </div>
-                    <p class="sell__card_descr">Annually</p>
+                    <p class="sell__card_description">Annually</p>
                     <button class="sell__card_btn orange">buy now</button>
                 </div>
                 <div class="sell__card">
@@ -265,19 +306,18 @@
                         </p>
                         <p class="sell__card_sell text-limon">$149</p>
                     </div>
-                    <p class="sell__card_descr">up front</p>
+                    <p class="sell__card_description">up front</p>
                     <button class="sell__card_btn limon">buy now</button>
                 </div>
             </div>
         </div>
-
     </section>
     <section class="testimonials">
         <div class="container block__testimonials">
             <div class="testimonials__head">
                 <p class="testimonials__head_text">Testimonials</p>
                 <p class="testimonials__head_title">Don't take our word for it.</p>
-                <p class="testimonials__head_descr">See what our customers are saying.</p>
+                <p class="testimonials__head_description">See what our customers are saying.</p>
             </div>
             <div class="testimonials__users">
                 <div class="users__card">
@@ -306,15 +346,14 @@
                 </div>
             </div>
         </div>
-
     </section>
     <section class="download">
         <div class="container block__download">
             <p class="download__title">Download</p>
-            <p class="download__descr">It's available right now!</p>
+            <p class="download__description">It's available right now!</p>
             <p class="download__text">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis
                 risus egestas non.</p>
-            <a href="#" class="download__link"><img src="./img/download.png" alt=""></a>
+            <a href="#" class="download__link"><img src="./img/download.svg" alt=""></a>
         </div>
     </section>
     <section class="faq" id="faq">
@@ -323,51 +362,52 @@
                 <p class="faq__head_title">
                     FAQ
                 </p>
-                <p class="faq__head_descr">Some questions & some answers</p>
+                <p class="faq__head_description">Some questions & some answers</p>
             </div>
             <div class="faq__questions">
                 <div class="questions__card">
                     <p class="questions__card_title">What devices does H(app)y support?</p>
-                    <p class="questions__card_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                    <p class="questions__card_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nullam
                         scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque
                         ex, condimentum dapibus congue et, vulputate ut ligula.</p>
                 </div>
                 <div class="questions__card">
                     <p class="questions__card_title">How many megapixels does H(app)y support?</p>
-                    <p class="questions__card_descr">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex,
+                    <p class="questions__card_description">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex,
                         condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris
                         euismod elit et nisi ultrices, ut faucibus orci tincidunt. Vestibulum sit amet urna turpis.
                         Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
                 </div>
                 <div class="questions__card">
                     <p class="questions__card_title">Will my photos magically be more beautiful if I use this app?</p>
-                    <p class="questions__card_descr">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi
+                    <p class="questions__card_description">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi
                         ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo
                         consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit.</p>
                 </div>
                 <div class="questions__card">
                     <p class="questions__card_title">How many photos can I store in H(app)y?</p>
-                    <p class="questions__card_descr">Vestibulum ultrices, orci nec egestas pharetra, ligula est semper
+                    <p class="questions__card_description">Vestibulum ultrices, orci nec egestas pharetra, ligula est
+                        semper
                         enim, nec auctor sapien leo nec purus. Etiam ut orci varius, faucibus libero ac, cursus quam.
                         Aenean porta neque eget consequat fringilla.</p>
                 </div>
             </div>
         </div>
-
     </section>
     <footer>
         <div class="container block__footer">
-            <img src="./img/footer_logo.png" alt="">
+            <img src="./img/footer_logo.svg" alt="">
             <div class="footer__link">
-                <a href="#"><img src="./img/twiter.png" alt="" class="footer__link_icon"></a>
-                <a href="#"><img src="./img/instagram.png" alt="" class="footer__link_icon"></a>
-                <a href="#"><img src="./img/facebook.png" alt="" class="footer__link_icon"></a>
+                <a href="#"><img src="./img/twiter.svg" alt="" class="footer__link_icon"></a>
+                <a href="#"><img src="./img/instagram.svg" alt="" class="footer__link_icon"></a>
+                <a href="#"><img src="./img/facebook.svg" alt="" class="footer__link_icon"></a>
             </div>
         </div>
-
     </footer>
-    <div class="modal-container" id="modal-container">
-        <div class="modal">
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
             <p class="modal__title">Leave a request for the purchase of goods</p>
             <input type="text" placeholder="name" class="modal__input_text">
             <input type="text" placeholder="email" class="modal__input_text">
@@ -387,29 +427,31 @@
             <p class="modal__how">How did you know about our app?</p>
             <div class="modal__checkbox">
                 <label id="facebook" class="modal__label facebook">
-                    <input class="modal__checkbox-btn" type="radio" name="Facebook" id="facebook"
+                    <input class="modal__checkbox-btn" type="checkbox" name="Facebook" id="facebook"
                         value="">Facebook</label>
                 <label id="Instagram" class="modal__label facebook">
-                    <input class="modal__checkbox-btn" type="radio" name="Facebook" id="Instagram"
+                    <input class="modal__checkbox-btn" type="checkbox" name="Facebook" id="Instagram"
                         value="">Instagram</label>
                 <label id="Youtube" class="modal__label facebook">
-                    <input class="modal__checkbox-btn" type="radio" name="Facebook" id="Youtube"
+                    <input class="modal__checkbox-btn" type="checkbox" name="Facebook" id="Youtube"
                         value="">Youtube</label>
                 <label id="Other" class="modal__label facebook">
-                    <input class="modal__checkbox-btn" type="radio" name="Facebook" id="Other" value="">Other</label>
+                    <input class="modal__checkbox-btn" type="checkbox" name="Facebook" id="Other" value="">Other</label>
             </div>
-            <button class="modal__btn" id="time-open" onclick="loading()">send</button>
-            <div class="modal-time" id="modal-time">
-                <img src="./img/time.png" alt="" class="time__img">
+            <button class="modal__btn" id="time-open">send</button>
+            <div class="modal-time" id="modal_time">
+                <img src="./img/time.svg" alt="" class="time__img">
                 <span class="time__text">Loading...</span>
             </div>
         </div>
     </div>
-    <script type="module" src="./scripts.js"></script>
+    <script defer type="module" src="./scripts.js"></script>
+    <script src="./js/modal.js"></script>
     <script type="module" src="./js/loading.js"></script>
     <script src="js/time.js"></script>
     <script src="./js/price.js "></script>
     <script src="./js/darkmode.js"></script>
+    <script src="./js/burgerMenu.js"></script>
 </body>
 
 </html>

@@ -34,7 +34,7 @@
     color: #222222;
 }
 
-.price__head_descr {
+.price__head_description {
     font-size: 18px;
     line-height: 24px;
     text-align: center;
@@ -61,13 +61,16 @@
     font-weight: 400;
     margin-right: 15px;
 }
+
 .sell__card:nth-child(3) {
     margin-right: 0;
 }
+
 .sell__card-flex {
     position: relative;
     height: 130px;
 }
+
 .sell__card_class {
     position: absolute;
     top: 0;
@@ -84,7 +87,7 @@
     margin: 8px 0 24px;
 }
 
-.sell__card_descr {
+.sell__card_description {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 2px;
@@ -103,4 +106,27 @@
     text-transform: uppercase;
     color: #FFFFFF;
     border: none;
+}
+@media (max-width: 1163px) {
+    .price__sell {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sell__card:nth-child(3) {
+        margin-top: 15px;
+    }
+}
+@media (max-width: 788px) {
+    .sell__card:nth-child(2) {
+        margin-top: 15px;
+    }
+    .sell__card {
+        margin-right: 0;
+    }
+}
+@media (max-width: 580px) {
+    .price__head {
+        width: 100%;
+    }
 }

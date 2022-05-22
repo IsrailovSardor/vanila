@@ -1,40 +1,60 @@
 const data = async () => {
-    const got = await fetch("../config.json");
-    const config = await got.json();
+    const getRequest = await fetch("../config.json");
+    const config = await getRequest.json();
+
     const parseDateWithDefaultFormat = (dateTimeStr) => {
         const regexFormat = /(\d{2})\.(\d{2})\.(\d{4}) +(\d{2}):(\d{2})/;
-    
-        const [day, month, year, hour, minute] = regexFormat.exec(dateTimeStr)
+        const [day, month, year, hour, minutse] = regexFormat.exec(dateTimeStr)
             .splice(1)
             .map(x => Number(x));
-    
-        return new Date(year, month - 1, day, hour, minute);
+
+        return new Date(year, month - 1, day, hour, minutse);
     };
     let date = parseDateWithDefaultFormat(config.timerEndDate)
-  
-    function Counts() {
-        let now = new Date();
-        gat = date - now;
-        let days = Math.floor(gat / 1000 / 60 / 60 / 24);
-        let hours = Math.floor(gat / 1000 / 60 / 60 ) %24;
-        let minut = Math.floor(gat / 1000 / 60 ) % 60;
-        let second = Math.floor(gat / 1000) %60;
-        document.getElementById('time-count__day').innerHTML = days;
-        document.getElementById('time-count__hours').innerHTML = hours;
-        document.getElementById('time-count__minutes').innerHTML = minut;
-        document.getElementById('time-count__seconds').innerHTML = second
-  
-        if(days === 0 ){
-            if( hours === 0 ){
-                if( second === -1){
-                    document.getElementById("timet-data").style.display = "none"
-                }
-            }
-        }else{
+
+    function renderDate() {
+        let newDate = new Date();
+        totalDate = date - newDate;
+
+        let days = Math.floor(totalDate / 1000 / 60 / 60 / 24);
+        let hours = Math.floor(totalDate / 1000 / 60 / 60) % 24;
+        let minuts = Math.floor(totalDate / 1000 / 60) % 60;
+        let seconds = Math.floor(totalDate / 1000) % 60;
+
+        document.getElementById('time-count__day').textContent = days;
+        document.getElementById('time-count__hours').textContent = hours;
+        document.getElementById('time-count__minutes').textContent = minuts;
+        document.getElementById('time-count__seconds').textContent = seconds;
+
+        if (days < 0) {
             document.getElementById("timet-data").style.display = "none"
-      }
+            clearInterval(interval)
+            return
+        } else {
+            document.getElementById("timet-data").style.display = "block"
+        };
+        if (days < 10) {
+            document.getElementById('span__day').textContent = 0
+        } else {
+            document.getElementById('span__day').textContent = ''
+        }
+        if (hours < 10) {
+            document.getElementById('span__hours').textContent = 0
+        } else {
+            document.getElementById('span__hours').textContent = ''
+        }
+        if (minuts < 10) {
+            document.getElementById('span__minutes').textContent = 0
+        } else {
+            document.getElementById('span__minutes').textContent = ''
+        }
+        if (seconds < 10) {
+            document.getElementById('span__seconds').textContent = 0
+        } else {
+            document.getElementById('span__seconds').textContent = ''
+        }
+        const interval = setInterval(renderDate, 1000)
     }
-    Counts();
-    setInterval(Counts,1000)
-  };
-  data();
+    renderDate();
+};
+data();
