@@ -1,4 +1,4 @@
-.navbar {
+#navbar {
     position: fixed;
     background-color: white;
     width: 100%;
@@ -9,7 +9,7 @@
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
 }
 
-.block_navbar {
+.block__navbar {
     height: 100%;
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    padding: 13px 5px 13px 18px;
+    padding: 12px 6px 12px 18px;
     width: 611px;
 }
 
@@ -38,7 +38,7 @@
     align-items: center;
 }
 
-.ul__li {
+.navbar__li {
     list-style: none;
     font-size: 15px;
     line-height: 24px;
@@ -46,7 +46,7 @@
     text-decoration: none;
 }
 
-.ul__btn {
+.li__button {
     height: 40px;
     width: 172px;
     background: #222222;
@@ -59,29 +59,29 @@
     color: #FFFFFF;
 }
 
-.ul__btn:hover {
+.li__button:hover {
     background: #4E4E4E;
 }
 
-.ul__btn:active {
+.li__button:active {
     transform: scale(0.98);
     background: #222222;
 }
 
-.ul__btn:focus {
+.li__button:focus {
     border: 2px solid #5AB0FF;
 }
 
-.menu-btn {
+.burgerMenu {
     display: none;
 }
 
-.navbar__img_mobile {
+.navbar__img-mobile {
     display: none;
 }
 
 @media (max-width: 700px) {
-    .menu-btn {
+    .burgerMenu {
         display: block;
         width: 24px;
         height: 24px;
@@ -90,7 +90,7 @@
         overflow: hidden;
     }
 
-    .menu-btn span {
+    .burgerMenu span {
         width: 24px;
         height: 3px;
         position: absolute;
@@ -101,11 +101,11 @@
         transition: all 0.5s;
     }
 
-    .menu-btn span:nth-of-type(2) {
+    .burgerMenu span:nth-of-type(2) {
         top: calc(50% - 10px);
     }
 
-    .menu-btn span:nth-of-type(3) {
+    .burgerMenu span:nth-of-type(3) {
         top: calc(50% + 10px);
     }
 
@@ -129,35 +129,36 @@
         transform: translateX(0);
     }
 
-    .menu-btn.active span:nth-of-type(1) {
+    .burgerMenu.active span:nth-of-type(1) {
         display: none;
     }
 
-    .menu-btn.active span:nth-of-type(2) {
+    .burgerMenu.active span:nth-of-type(2) {
         top: 50%;
         transform: translate(-50%, 0%) rotate(45deg);
     }
 
-    .menu-btn.active span:nth-of-type(3) {
+    .burgerMenu.active span:nth-of-type(3) {
         top: 50%;
         transform: translate(-50%, 0%) rotate(-45deg);
     }
 
-    .navbar__img_mobile {
+    .navbar__img-mobile {
         display: block;
         margin-bottom: 52px;
     }
 
-    .ul__li {
+    .navbar__li {
         margin-bottom: 11px;
     }
 
-    .ul__li:nth-of-type(4) {
+    .navbar__li:nth-of-type(4) {
         margin-bottom: 52px;
     }
 }
+
 @media (max-width: 380px) {
-    .navbar {
+    #navbar {
         padding: 15px 25px;
     }
 }

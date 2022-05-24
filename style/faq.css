@@ -1,4 +1,4 @@
-.faq {
+#faq {
     padding: 105px 0 110px 10px;
     background: #E5E5E5;
 }
@@ -6,7 +6,6 @@
 .block__faq {
     width: 100%;
     height: 100%;
-
 }
 
 .faq__head {
@@ -17,13 +16,13 @@
     margin-bottom: 40px;
 }
 
-.faq__head_title {
+.faq__head-title {
     font-size: 32px;
     line-height: 36px;
-    margin-bottom: 13px;
+    margin-bottom: 14px;
 }
 
-.faq__head_description {
+.faq__head-description {
     font-size: 15px;
     line-height: 20px;
 }
@@ -44,13 +43,13 @@
     margin-bottom: 50px;
 }
 
-.questions__card_title {
+.questions__card-title {
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 10px;
 }
 
-.questions__card_description {
+.questions__card-description {
     font-size: 16px;
     line-height: 24px;
 }

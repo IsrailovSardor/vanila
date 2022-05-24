@@ -25,7 +25,7 @@
     width: 192px;
 }
 
-.technology__text_head {
+.technology__text-head {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 2px;
@@ -34,14 +34,14 @@
     margin-bottom: 5px;
 }
 
-.technology__text_title {
+.technology__text-title {
     font-size: 32px;
     line-height: 36px;
     color: #222222;
     margin-bottom: 15px;
 }
 
-.technology__text_description {
+.technology__text-description {
     font-size: 16px;
     line-height: 24px;
     color: #666666;
@@ -53,15 +53,18 @@
         padding: 97px 10px 0 10px;
     }
 }
+
 @media (max-width: 435px) {
     .block__technology {
         justify-content: center;
         padding: 97px 10px 0 10px;
     }
+
     .technology__img {
         height: auto;
         width: 100%;
     }
+
     .technology__text {
         height: auto;
         width: 100%;

@@ -1,4 +1,4 @@
-.testimonials {
+#testimonials {
     background: #F2F2F2;
     padding: 100px 0;
 }
@@ -10,7 +10,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .testimonials__head {
@@ -22,7 +21,7 @@
     margin-bottom: 41px;
 }
 
-.testimonials__head_text {
+.testimonials__head-text {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 2px;
@@ -30,14 +29,14 @@
     color: #222222;
 }
 
-.testimonials__head_title {
+.testimonials__head-title {
     font-size: 32px;
     line-height: 36px;
     color: #222222;
     margin-bottom: 14px;
 }
 
-.testimonials__head_description {
+.testimonials__head-description {
     font-size: 18px;
     line-height: 24px;
     color: #666666;
@@ -66,40 +65,44 @@
 }
 
 
-.users__card_title {
+.users__card-title {
     font-size: 16px;
     line-height: 24px;
     color: #222222;
 
 }
 
-.users__card_name {
+.users__card-name {
     font-size: 16px;
     line-height: 20px;
     color: #1B1A1A;
     margin-bottom: 2px;
 }
 
-.users__card_profession {
+.users__card-profession {
     font-size: 14px;
     line-height: 20px;
     color: #1B1A1A;
 }
+
 @media (max-width: 786px) {
     .testimonials__users {
         justify-content: center;
     }
+
     .testimonials {
-    padding: 100px 10px;
+        padding: 100px 10px;
     }
 }
+
 @media (max-width: 350px) {
-    .users__card{ 
+    .users__card {
         width: 100%;
         height: auto;
         padding: 0;
     }
-    .users__card_title {
+
+    .users__card-title {
         margin-bottom: 10px;
     }
 }

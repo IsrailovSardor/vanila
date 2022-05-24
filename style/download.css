@@ -1,4 +1,4 @@
-.download {
+#download {
     padding: 100px 0 150px;
 }
 
@@ -21,7 +21,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #222222;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .download__description {

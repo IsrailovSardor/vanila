@@ -1,10 +1,10 @@
 {
 	"plans": [
-		{ "name": "standart", "price": 9 },
-		{ "name": "premium", "price": 99 },
-		{ "name": "lifetime", "price": 149 }
+		{ "name": "Standart", "price": 9 },
+		{ "name": "Premium", "price": 99 },
+		{ "name": "Lifetime", "price": 149 }
 	],
-	"timerEndDate": "21.05.2022 18:21",
+	"timerEndDate": "27.05.2022 18:21",
 	"testimonials": [
 		{ 
 			"name": "Pam Beesly", 
@@ -22,5 +22,5 @@
 			"job": "CEO and CoFounder"
 		}
 	],
-	"appStoreLink": "https://example.com"
+	"appStoreLink": "https://www.notion.so/Roadmap-1-0ed7573f0091461a863859c6011f4d28"
 }

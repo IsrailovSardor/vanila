@@ -1,4 +1,4 @@
-.timer {
+#timer {
     background-image: url(../img/timer_fon.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +11,7 @@
     margin-top: 90px;
 }
 
-.block_timer {
+.block__timer {
     max-width: 729px;
     height: 100%;
     display: flex;
@@ -23,7 +23,7 @@
     display: flex;
 }
 
-.timer__text_tilte {
+.timer__text-tilte {
     font-size: 50px;
     line-height: 75px;
     text-align: center;
@@ -32,14 +32,14 @@
     font-feature-settings: 'pnum'on, 'lnum'on;
 }
 
-.timer__text_description {
+.timer__text-description {
     font-size: 30px;
     line-height: 45px;
     text-align: center;
     letter-spacing: 1.5px;
 }
 
-.timet__block_data {
+.timet__block-data {
     width: 100%;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@
     line-height: 150px;
 }
 
-.timer__data_title {
+.timer__data-title {
     font-weight: 400;
     font-size: 100px;
     line-height: 150px;
@@ -71,18 +71,18 @@
     text-transform: uppercase;
 }
 
-.timer__date_description {
+.timer__date-description {
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 1.5px;
 }
 
 @media (max-width: 830px) {
-    .timer__text_tilte {
+    .timer__text-tilte {
         font-size: 40px;
     }
 
-    .timer__text_description {
+    .timer__text-description {
         font-size: 25px;
     }
 
@@ -90,23 +90,23 @@
         font-size: 70px;
     }
 
-    .timer__data_title {
+    .timer__data-title {
         font-size: 70px;
         line-height: 80px;
     }
 
-    .timer__date_description {
+    .timer__date-description {
         font-size: 20px;
     }
 
 }
 
 @media (max-width: 600px) {
-    .timer__text_tilte {
+    .timer__text-tilte {
         font-size: 30px;
     }
 
-    .timer__text_description {
+    .timer__text-description {
         font-size: 20px;
     }
 
@@ -114,22 +114,22 @@
         font-size: 50px;
     }
 
-    .timer__data_title {
+    .timer__data-title {
         font-size: 50px;
         line-height: 50px;
     }
 
-    .timer__date_description {
+    .timer__date-description {
         font-size: 15px;
     }
 }
 
 @media (max-width: 456px) {
-    .timer__text_tilte {
+    .timer__text-tilte {
         font-size: 25px;
     }
 
-    .timer__text_description {
+    .timer__text-description {
         font-size: 18px;
     }
 
@@ -138,12 +138,12 @@
         padding: 0 5px;
     }
 
-    .timer__data_title {
+    .timer__data-title {
         font-size: 40px;
         line-height: 40px;
     }
 
-    .timer__date_description {
+    .timer__date-description {
         font-size: 10px;
     }
 }

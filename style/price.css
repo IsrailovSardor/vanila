@@ -1,4 +1,4 @@
-.price {
+#price {
     padding: 100px 0;
 }
 
@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.price__head {
+.price__header {
     width: 600px;
     font-family: 'Poppins';
     font-style: normal;
@@ -20,7 +20,7 @@
     margin-bottom: 40px;
 }
 
-.price__head_text {
+.price__header-text {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 2px;
@@ -28,13 +28,13 @@
     color: #222222;
 }
 
-.price__head_title {
+.price__header-title {
     font-size: 32px;
     line-height: 36px;
     color: #222222;
 }
 
-.price__head_description {
+.price__header-description {
     font-size: 18px;
     line-height: 24px;
     text-align: center;
@@ -66,12 +66,12 @@
     margin-right: 0;
 }
 
-.sell__card-flex {
+.sell__card-block {
     position: relative;
     height: 130px;
 }
 
-.sell__card_class {
+.sell__card-class {
     position: absolute;
     top: 0;
     left: 0;
@@ -80,14 +80,14 @@
     line-height: 24px;
 }
 
-.sell__card_sell {
+.sell__card-sell {
     font-size: 108px;
     line-height: 124px;
     letter-spacing: 8px;
     margin: 8px 0 24px;
 }
 
-.sell__card_description {
+.sell__card-description {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 2px;
@@ -96,7 +96,7 @@
     margin-bottom: 20px;
 }
 
-.sell__card_btn {
+.sell__card-button {
     height: 40px;
     width: 129px;
     border-radius: 4px;
@@ -107,26 +107,63 @@
     color: #FFFFFF;
     border: none;
 }
+
+.hover__button-blue {
+    background: #0278ED;
+}
+
+.hover__button-blue:hover {
+    background: #0277ed83;
+}
+
+.hover__button-orange {
+    background: #FF5437;
+}
+
+.hover__button-orange:hover {
+    background: #ff553771;
+}
+
+.hover_button-limon {
+    background: #FF9209;
+}
+
+.hover_button-limon:hover {
+    background: #ff900980;
+}
+
+.sell__card-button:active {
+    transform: scale(0.98);
+}
+
+.sell__card-button:focus {
+    border: 2px solid #5AB0FF;
+}
+
 @media (max-width: 1163px) {
     .price__sell {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .sell__card:nth-child(3) {
         margin-top: 15px;
     }
 }
+
 @media (max-width: 788px) {
     .sell__card:nth-child(2) {
         margin-top: 15px;
     }
+
     .sell__card {
         margin-right: 0;
     }
 }
+
 @media (max-width: 580px) {
-    .price__head {
+    .price__header {
         width: 100%;
     }
 }

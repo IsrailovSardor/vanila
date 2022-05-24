@@ -1,4 +1,4 @@
-.orangess {
+#orangess {
     background: #FF5437;
     padding: 80px;
 }
@@ -22,44 +22,50 @@
     margin-bottom: 25px;
 }
 
-.oranges__text_title {
+.oranges__text-title {
     font-size: 96px;
     line-height: 96px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-.oranges__text_description {
+.oranges__text-description {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
 @media (max-width: 830px) {
     .orangess {
         padding: 50px;
     }
-    .oranges__text_title {
+
+    .oranges__text-title {
         font-size: 70px;
         text-align: left;
     }
 }
+
 @media (max-width: 430px) {
     .orangess {
         padding: 10px;
     }
+
     .block__oranges {
         padding: 0 40px;
     }
-    .oranges__text_title {
+
+    .oranges__text-title {
         font-size: 50px;
         text-align: left;
         margin-bottom: 10px;
         line-height: 56px;
 
     }
-    .oranges__text_description {
+
+    .oranges__text-description {
         font-size: 14px;
         line-height: 20px;
         text-align: left;
