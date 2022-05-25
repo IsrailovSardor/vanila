@@ -20,11 +20,8 @@ export let getTime = () => {
             document.getElementById('time-count__hours').textContent = hours;
             document.getElementById('time-count__minutes').textContent = minuts;
             document.getElementById('time-count__seconds').textContent = seconds;
-
             if (days < 0) {
                 document.getElementById("timer").style.display = "none"
-                clearInterval(interval)
-                return
             } else {
                 document.getElementById("timer").style.display = "block"
             };
@@ -48,8 +45,8 @@ export let getTime = () => {
             } else {
                 document.getElementById('span__seconds').textContent = ''
             }
-            const interval = setInterval(renderDate, 1000)
         }
+        setInterval(renderDate, 1000)
         renderDate();
     };
     data();

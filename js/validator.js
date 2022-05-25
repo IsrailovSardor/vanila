@@ -64,7 +64,7 @@ form.onsubmit = function (e) {
         check[i].checked === true ? activeCheck = check[i].value : null
     }
 
-    console.log("name" + ":" + nameVal, "email :" + ":" + emailVal, "radio" + ":" + activeRadio, "check" + ":" + activeCheck)
+    console.log("name" + ":" + nameVal, "email" + ":" + emailVal, "radio" + ":" + activeRadio, "check" + ":" + activeCheck)
 }
 
 // }
