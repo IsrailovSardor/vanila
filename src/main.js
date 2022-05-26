@@ -1,3 +1,5 @@
+import './style.css'
+
 import { getModal } from './js/modal.js'
 getModal()
 import { getPrice } from './js/price.js'
@@ -12,6 +14,5 @@ import { getTime } from './js/time.js'
 getTime()
 import { getLink } from './js/burgerMenu.js'
 getLink()
-// import { getValidator } from './js/validator.js'
-// getValidator()
-
+import { getValidator } from './js/validator.js'
+getValidator()

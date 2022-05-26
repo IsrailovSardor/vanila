@@ -2,7 +2,7 @@
 @import url(./style/navbar.css);
 @import url(./style/timer.css);
 @import url(./style/future.css);
-@import url(/style/features.css);
+@import url(./style/features.css);
 @import url(./style/orange.css);
 @import url(./style/technology.css);
 @import url(./style/speed.css);
@@ -105,7 +105,9 @@ button {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
+
 }
+
 
 
 

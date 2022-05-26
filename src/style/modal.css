@@ -189,11 +189,11 @@ input[type=radio] {
     height: 24px;
     border-radius: 4px;
     margin-right: 19px;
-    background: url() no-repeat center center;
+    /* background: url() no-repeat center center; */
 }
 
 .modal__radio-btn[type=radio]:checked {
-    background: url(../img/chel.svg) no-repeat center center;
+    /* background: url(../img/chel.svg) no-repeat center center; */
     background-size: 19px 15px;
     margin-left: 10px;
 }
@@ -280,6 +280,6 @@ input[type=radio]:focus {
 
 .custom-checkbox:checked+label::before {
     border-color: #0278ED;
-    background-image: url("../img/chek.svg");
+    /* background-image: url("../img/chek.svg"); */
     background-size: 19px 15px;
 }
