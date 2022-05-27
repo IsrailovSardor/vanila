@@ -1,5 +1,5 @@
-export let getTime = () => {
-    const data = async () => {
+export const renderTime = () => {
+    const getData = async () => {
         const getRequest = await fetch("../../config.json");
         const config = await getRequest.json();
 
@@ -49,5 +49,5 @@ export let getTime = () => {
         setInterval(renderDate, 1000)
         renderDate();
     };
-    data();
+    getData();
 } 

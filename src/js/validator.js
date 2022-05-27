@@ -1,4 +1,4 @@
-export let getValidator = () => {
+export const renderValidator = () => {
     let form = document.querySelector('.js-form')
     let formInputs = document.querySelectorAll('.modal__input-text')
     let inputEmail = document.querySelector('.js-input-email')

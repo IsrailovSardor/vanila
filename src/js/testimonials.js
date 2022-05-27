@@ -1,4 +1,4 @@
-export let getTestimonials = () => {
+export const renderTestimonials = () => {
     const getTestimonials = async () => {
         const got = await fetch("../../config.json");
         const config = await got.json();

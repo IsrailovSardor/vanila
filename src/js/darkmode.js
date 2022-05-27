@@ -1,4 +1,4 @@
-export let getDarkMode = () => {
+export const renderDarkMode = () => {
     const white = document.getElementById('white__button')
     const dark = document.getElementById('dark_btn')
     

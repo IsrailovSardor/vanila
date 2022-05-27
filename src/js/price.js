@@ -1,7 +1,6 @@
-export let getPrice = () => {
+export const renderPrice = () => {
     const getPrice = async () => {
         const got = await fetch("../../config.json");
-        console.log(got)
         const config = await got.json();
         let price__standart = config.plans
 

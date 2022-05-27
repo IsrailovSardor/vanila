@@ -1,4 +1,4 @@
-export let getModal = () => {
+export const renderModal = () => {
     var modal = document.getElementById('myModal');
     var btns = document.querySelectorAll(".open__modal");
     btns.forEach(btn => btn.onclick = () => {
