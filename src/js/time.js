@@ -1,6 +1,6 @@
 export let getTime = () => {
     const data = async () => {
-        const getRequest = await fetch("../config.json");
+        const getRequest = await fetch("../../config.json");
         const config = await getRequest.json();
 
         let splitDate = config.timerEndDate.split(/\W/)

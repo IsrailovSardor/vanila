@@ -1,6 +1,6 @@
 #navbar {
     position: fixed;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     top: 0;
     height: 90px;
@@ -152,7 +152,7 @@
         margin-bottom: 11px;
     }
 
-    .navbar__li:nth-of-type(4) {
+    .navbar__li:nth-of-type(5n + 5) {
         margin-bottom: 52px;
     }
 }

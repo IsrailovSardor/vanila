@@ -8,13 +8,11 @@ export let getBurgerMenu = () => {
 }
 export let getLink = () => {
 	const link = async () => {
-		const got = await fetch("../config.json");
+		const got = await fetch("../../config.json");
 		const config = await got.json();
 		let link = config.appStoreLink
-		window.onload = function () {
-			var url = `${link}`;
-			document.querySelector('a[name="href"]').setAttribute('href', url);
-		}
+		let a = document.getElementById("bb")
+		a.setAttribute("href", link);
 	};
 	link();
 }

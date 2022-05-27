@@ -1,6 +1,6 @@
 export let getTestimonials = () => {
     const getTestimonials = async () => {
-        const got = await fetch("../config.json");
+        const got = await fetch("../../config.json");
         const config = await got.json();
         let testimonials = config.testimonials
 
