@@ -21,6 +21,9 @@ export const renderValidator = () => {
         let emailVal = inputEmail.value
         let nameVal = inputName.value
         let emptyInputs = Array.from(formInputs).filter(input => input.value === '');
+        let activeRadio;
+        let activeCheck = [];
+        let modal = document.getElementById('myModal');
 
         if (emptyInputs.length !== 0) {
             document.getElementById("span__email").textContent = "this field is reqiured*"
@@ -34,11 +37,7 @@ export const renderValidator = () => {
             return false
         } else {
             document.getElementById("span__email").textContent = ""
-            let modal_time = document.getElementById('modal_time')
-            let open = document.getElementById('time-open')
-            open.onclick = function () {
-                modal_time.style.display = "flex";
-            }
+
         }
         if (!validateEmail(emailVal)) {
             document.getElementById("span__email").textContent = "email not valid"
@@ -59,14 +58,25 @@ export const renderValidator = () => {
         } else {
             document.getElementById("span__name").textContent = ""
         }
-
         for (var i = 0; i < radio.length; i++) {
             radio[i].checked === true ? activeRadio = radio[i].value : null
         }
         for (var i = 0; i < check.length; i++) {
-            check[i].checked === true ? activeCheck = check[i].value : null
+            check[i].checked === true ? activeCheck.push(check[i].id) : null
         }
-
-        console.log("name" + ":" + nameVal, "email" + ":" + emailVal, "radio" + ":" + activeRadio, "check" + ":" + activeCheck)
+        function closeModal() {
+            modal.style.display = "none"
+            console.log("name" + ":" + nameVal, "email" + ":" + emailVal, "radio" + ":" + activeRadio, "check" + ":" + activeCheck)
+        }
+        if (
+            activeRadio !== null &&
+            activeCheck.length > 0 &&
+            emailVal.length > 3 &&
+            nameVal.length > 3
+        ) {
+            document.getElementById('modal_time').style.display = "flex";
+            document.getElementById('modal-content').style.height = "860px";
+            setInterval(closeModal, 3000);
+        }
     }
 }

@@ -46,17 +46,23 @@
     text-decoration: none;
 }
 
-.li__button {
+.link__button {
     height: 40px;
     width: 172px;
     background: #222222;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.link-button {
     font-size: 14px;
     line-height: 18px;
-    text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .li__button:hover {

@@ -16,4 +16,7 @@ import { renderLink } from './js/burgerMenu.js'
 renderLink()
 import { renderValidator } from './js/validator.js'
 renderValidator()
-
+import { renderModalLink } from './js/burgerMenu.js'
+renderModalLink()
+import { renderRadiobutton } from './js/testimonials.js'
+renderRadiobutton()

@@ -1,8 +1,17 @@
 export const renderModal = () => {
     var modal = document.getElementById('myModal');
     var btns = document.querySelectorAll(".open__modal");
-    btns.forEach(btn => btn.onclick = () => {
+    const inputRadio = document.querySelectorAll('input[type="radio"]');
+
+    btns.forEach((btn) => btn.onclick = () => {
         modal.style.display = "flex";
+        inputRadio.forEach(input  => {
+            if (btn.dataset.btn == input.id) {
+                input.checked = true
+                }
+                console.log(btn.dataset.btn  ,input.id)
+        })
+        
     })
 
     window.onclick = function (event) {

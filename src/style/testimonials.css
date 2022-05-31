@@ -99,7 +99,8 @@
     .users__card {
         width: 100%;
         height: auto;
-        padding: 0;
+        padding: 10px;
+        margin: 10px;
     }
 
     .users__card-title {

@@ -9,20 +9,20 @@
     height: 100vh;
     background-color: rgb(0, 0, 0, 0.4);
     display: flex;
-    align-items: center;
     justify-content: center;
     display: none;
+    overflow-y: scroll;
+    padding: 154px 0;
 }
 
 .modal-content {
     width: 506px;
-    height: 90%;
+    height: 815px;
     background: #FFFFFF;
     border-radius: 4px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,8 +30,8 @@
     z-index: 155;
 }
 
-.modal-content::-webkit-scrollbar {
-    height: 0;
+.modal::-webkit-scrollbar {
+    /* height: 0; */
 }
 
 .modal__title {
@@ -61,15 +61,21 @@
     outline: none;
     border-radius: 4px;
 }
+
 .modal_input-block {
     width: 330px;
     margin-bottom: 16px;
 }
+
 .modal_input-block:nth-child(2n -1) {
     width: 330px;
     margin-bottom: 18px;
 }
-#span, #span__email, #span__name, #spand {
+
+#span,
+#span__email,
+#span__name,
+#spand {
     margin-left: 10px;
     font-size: 12px;
     line-height: 18px;
@@ -189,7 +195,6 @@ input[type=radio] {
     height: 24px;
     border-radius: 4px;
     margin-right: 19px;
-    background: url() no-repeat center center;
 }
 
 .modal__radio-btn[type=radio]:checked {
@@ -221,8 +226,12 @@ input[type=radio]:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 31px 0 38px 0;
     display: none;
+}
+
+.visble {
+    display: block;
 }
 
 .time__text {
@@ -282,4 +291,56 @@ input[type=radio]:focus {
     border-color: #0278ED;
     background-image: url("../img/chek.svg");
     background-size: 19px 15px;
+}
+
+@media (max-width: 692px) {
+    .modal {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 535px) {
+    .modal {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .modal {
+        padding: 20px 0;
+    }
+
+    .modal__input-text {
+        width: 100%;
+    }
+
+    .modal_input-block {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .modal_input-block {
+        width: 100%;
+    }
+
+    .modal_input-block:nth-child(2n -1) {
+        width: 100%;
+    }
+
+    .btn__card-modal {
+        width: 300px;
+        justify-content: flex-start;
+    }
+
+    .modal__radio-btn:checked+.standert {
+        width: 100%;
+    }
+
+    .modal__radio-btn:checked+.premium {
+        width: 100%;
+    }
+
+    .modal__radio-btn:checked+.lifetime {
+        width: 100%;
+    }
 }

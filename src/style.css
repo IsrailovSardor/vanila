@@ -20,6 +20,11 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
 body {
     font-family: 'Poppins';
     font-style: normal;

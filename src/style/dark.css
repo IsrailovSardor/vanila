@@ -55,6 +55,9 @@
     width: 128px;
     border: none;
     background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #white__moon {
