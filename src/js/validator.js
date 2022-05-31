@@ -16,8 +16,8 @@ export const renderValidator = () => {
         return req.test(String(text).toLowerCase());
     }
 
-    form.onsubmit = function (e) {
-        e.preventDefault()
+    form.onsubmit =async function  (e) {
+        await e.preventDefault()
         let emailVal = inputEmail.value
         let nameVal = inputName.value
         let emptyInputs = Array.from(formInputs).filter(input => input.value === '');
@@ -66,6 +66,10 @@ export const renderValidator = () => {
         }
         function closeModal() {
             modal.style.display = "none"
+            document.querySelector('.js-input-email').value = "";
+            document.querySelector('.js-input-name').value = "";
+            document.getElementById('modal_time').style.display = "none";
+            document.getElementById('modal-content').style.height = "815px"; 
             console.log("name" + ":" + nameVal, "email" + ":" + emailVal, "radio" + ":" + activeRadio, "check" + ":" + activeCheck)
         }
         if (
@@ -75,8 +79,8 @@ export const renderValidator = () => {
             nameVal.length > 3
         ) {
             document.getElementById('modal_time').style.display = "flex";
-            document.getElementById('modal-content').style.height = "860px";
-            setInterval(closeModal, 3000);
+            document.getElementById('modal-content').style.height = "860px"; 
+            setTimeout(closeModal, 3000);
         }
     }
 }

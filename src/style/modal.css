@@ -219,6 +219,15 @@ input[type=radio]:focus {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+.modal__btn:hover {
+    background: #22222288;
+}
+.modal__btn:active {
+    transform: scale(0.98);
+}
+.modal__btn:focus {
+    border: 2px solid #5AB0FF;
+}
 
 #modal_time {
     height: 24px;

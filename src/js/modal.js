@@ -9,7 +9,6 @@ export const renderModal = () => {
             if (btn.dataset.btn == input.id) {
                 input.checked = true
                 }
-                console.log(btn.dataset.btn  ,input.id)
         })
         
     })

@@ -88,17 +88,25 @@
 
 @media (max-width: 700px) {
     .burgerMenu {
-        display: block;
-        width: 24px;
-        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
         position: relative;
         z-index: 2;
+        padding: 10px;
         overflow: hidden;
+  
+        border-radius: 50%;
+    }
+    .burgerMenu:hover {
+        background: #E5E5E5;
     }
 
     .burgerMenu span {
-        width: 24px;
-        height: 3px;
+        width: 16.5px;
+        height: 2.5px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -108,11 +116,11 @@
     }
 
     .burgerMenu span:nth-of-type(2) {
-        top: calc(50% - 10px);
+        top: calc(50% - 8px);
     }
 
     .burgerMenu span:nth-of-type(3) {
-        top: calc(50% + 10px);
+        top: calc(50% + 8px);
     }
 
     .navbar__ul {
