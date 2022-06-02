@@ -16,6 +16,7 @@
 }
 
 .modal-content {
+    position: relative;
     width: 506px;
     height: 815px;
     background: #FFFFFF;
@@ -31,9 +32,16 @@
 }
 
 .modal::-webkit-scrollbar {
-    /* height: 0; */
+    height: 0;
+    width: 0;
 }
-
+.close__modal {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 29px;
+    margin-top: 27px;
+}
 .modal__title {
     font-size: 20px;
     line-height: 30px;

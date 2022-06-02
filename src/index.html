@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -391,6 +390,13 @@
     </footer>
     <div id="myModal" class="modal">
         <form class="modal-content js-form" action="" novalidate id="modal-content">
+
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="close__modal">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7.67398 8.99998L0.836975 15.837L2.16297 17.163L8.99998 10.326L15.837 17.163L17.163 15.837L10.326 8.99998L17.163 2.16297L15.837 0.836975L8.99998 7.67398L2.16297 0.836975L0.836975 2.16297L7.67398 8.99998Z"
+                    fill="#222222" />
+            </svg>
+
             <p class="modal__title">Leave a request for the purchase of goods</p>
             <div class="modal_input-block">
                 <input type="text" placeholder="name" class="modal__input-text js-input-name" name="text">
@@ -402,16 +408,16 @@
             </div>
             <p class="modal__plan">Your plan?</p>
             <label for="standart" class="btn__card-modal text-blue btn-blue radio__modal_pricer">
-                <input id="standart" class="modal__radio-btn" type="radio" name="standart" value="Standart"><span
-                    class="modal__span standert"></span>
+                <input id="standart" class="modal__radio-btn" type="radio" name="standart" value="">
+                <span class="modal__span standert"></span>
             </label>
             <label for="premium" class="btn__card-modal text-orange btn-orange radio__modal_pricer">
-                <input id="premium" class="modal__radio-btn" type="radio" name="standart" value="Premium"><span
+                <input id="premium" class="modal__radio-btn" type="radio" name="standart" value="premium"><span
                     class="modal__span premium"></span>
             </label>
             <label for="lifetime" class="btn__card-modal text-limon btn-limon radio__modal_pricer">
-                <input id="lifetime" class="modal__radio-btn" type="radio" name="standart" value=Lifetime checked><span
-                    class="modal__span lifetime"></span>
+                <input id="lifetime" class="modal__radio-btn" type="radio" name="standart" value="lifetime"
+                    checked><span class="modal__span lifetime"></span>
             </label>
             <p class="modal__how">How did you know about our app?</p>
             <div class="modal__checkbox">
@@ -431,7 +437,6 @@
             </div>
         </form>
     </div>
-    <script type="module" src="./main.js"></script>
 </body>
 
 </html>
