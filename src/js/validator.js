@@ -51,14 +51,16 @@ export const renderValidator = () => {
         for (var i = 0; i < check.length; i++) {
             check[i].checked === true ? activeCheck.push(check[i].id) : null
         }
-
+        const dataRes = {name:inputEmail.value,email:inputName.value, radio:activeRadio,check:activeCheck  }
         function closeModal() {
             modal.style.display = "none"
             document.querySelector('.js-input-email').value = "";
             document.querySelector('.js-input-name').value = "";
             document.getElementById('modal_time').style.display = "none";
+            document.body.style.overflow = "auto";
             document.getElementById('modal-content').style.height = "815px";
             console.log("name" + ":" + inputEmail.value, "email" + ":" +  inputName.value, "radio" + ":" + activeRadio, "check" + ":" + activeCheck)
+            console.log(dataRes)
         }
         if (
             activeRadio !== null &&
@@ -68,6 +70,7 @@ export const renderValidator = () => {
         ) {
             document.getElementById('modal_time').style.display = "flex";
             document.getElementById('modal-content').style.height = "860px";
+            document.body.style.overflow = "auto";
             setTimeout(closeModal, 3000);
         }
     }

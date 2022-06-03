@@ -26,6 +26,6 @@ export const renderModalLink = () => {
 	links.forEach(link => link.addEventListener('click', () => {
 		menuBtn.classList.remove('active');
 		menu.classList.remove('active');
-		document.body.style.overflow = 'auto'
+		document.body.style.overflow = "auto";
 	}))
 }
