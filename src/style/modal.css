@@ -146,7 +146,7 @@
     color: rgb(255, 255, 255);
 }
 
-.btn__card-modal:nth-child(3n + 1) {
+.btn__card-modal:nth-child(3n + 2) {
     margin-bottom: 42px;
 }
 
