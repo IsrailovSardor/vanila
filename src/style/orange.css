@@ -1,10 +1,10 @@
 #orangess {
     background: #FF5437;
-    padding: 80px;
+    padding: 80px 0 80px;
 }
 
 .block__oranges {
-    padding: 0 63px;
+    padding: 0 110px 0 82px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,6 +12,7 @@
 }
 
 .oranges__text {
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +20,6 @@
     font-style: normal;
     font-weight: 400;
     color: white;
-    margin-bottom: 25px;
 }
 
 .oranges__text-title {
@@ -45,6 +45,10 @@
     .oranges__text-title {
         font-size: 70px;
         text-align: left;
+    }
+    .block__oranges {
+        padding: 0 130px;
+        justify-content: left;
     }
 }
 

@@ -17,16 +17,14 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
+    padding-left: 8px;
+    margin-bottom: 32px;
 }
 
 .speed__img {
     height: 548px;
     width: 376px;
-}
-
-.speed__text_img {
-    height: 64px;
-    width: 192px;
+    margin-left: 30px;
 }
 
 .speed__text-head {
@@ -46,6 +44,7 @@
 }
 
 .speed__text-description {
+    max-width: 405px;
     font-size: 16px;
     line-height: 24px;
     color: #666666;
@@ -76,6 +75,7 @@
     .speed__img {
         height: auto;
         width: 100%;
+        margin-left: 0;
     }
 
     .speed__text {
@@ -83,4 +83,5 @@
         width: 100%;
         margin-bottom: 20px;
     }
+
 }

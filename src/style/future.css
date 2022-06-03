@@ -10,11 +10,12 @@
 .future__text {
     height: 354px;
     width: 420px;
-    margin-left: 25px;
-    margin-bottom: 120px;
+    margin-left: 18px;
+    margin-bottom: 105px;
 }
 
 .future__img {
+    margin-right: 10px;
     height: 548px;
     max-width: 376px;
 }
@@ -32,6 +33,7 @@
 }
 
 .future__text-description {
+    max-width: 394px;
     font-size: 16px;
     line-height: 24px;
 }
@@ -92,16 +94,12 @@
 
     .future__img {
         height: 548px;
-        width: 420px;
+        width: 100%;
+        margin-right: 0;
     }
 }
 
 @media (max-width: 350px) {
-    .future__img {
-        height: auto;
-        width: 100%;
-    }
-
     .future__text {
         height: auto;
         width: 100%;

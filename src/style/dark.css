@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0 160px;
+    padding: 100px 0 155px;
     width: 600px;
 }
 
@@ -27,6 +27,7 @@
 }
 
 .dark__head-description {
+    max-width: 578px;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
@@ -50,10 +51,12 @@
 }
 
 .dark__footer-button {
+    padding-bottom: 5px;
     height: 49px;
     color: white;
     width: 128px;
     border: none;
+    gap: 0 40px;
     background: transparent;
     display: flex;
     flex-direction: column;
@@ -71,15 +74,21 @@
 }
 
 .light__footer-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .dark__footer-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     text-align: center;

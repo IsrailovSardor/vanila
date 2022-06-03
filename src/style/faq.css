@@ -6,6 +6,7 @@
 .block__faq {
     width: 100%;
     height: 100%;
+    padding: 0 12px;
 }
 
 .faq__head {
@@ -30,6 +31,7 @@
 .faq__questions {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px 16px;
 }
 
 .questions__card {
@@ -39,8 +41,8 @@
     font-style: normal;
     color: #222222;
     font-weight: 400;
-    margin-right: 16px;
-    margin-bottom: 50px;
+    /* margin-right: 16px;
+    margin-bottom: 50px; */
 }
 
 .questions__card-title {
